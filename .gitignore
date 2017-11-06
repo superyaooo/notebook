@@ -1,0 +1,12 @@
+/.metadata/
+.gradle
+.DS_Store
+.recommenders
+.settings
+.classpath
+.project
+bin
+build
+gradle
+gradlew
+gradlew.bat
