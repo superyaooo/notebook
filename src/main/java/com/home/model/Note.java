@@ -1,16 +1,24 @@
 package com.home.model;
 
-import java.time.LocalDate;
-
 public class Note {
+	private Long id;
 	private String title;
 	private String content;
-	private LocalDate publishDate;
+	private String publishDate;
 	
-	Note(String title, String content, LocalDate publishDate) {
+	public Note(Long id, String title, String content, String publishDate) {
+		this.id = id;
 		this.title = title;
 		this.content = content;
 		this.publishDate = publishDate;
+	}
+	
+	public Long getId() {
+		return this.id;
+	}
+	
+	public void setId(Long id) {
+		this.id = id;
 	}
 	
 	public String getTitle() {
@@ -21,7 +29,7 @@ public class Note {
 		return this.content;
 	}
 	
-	public LocalDate getPublishDate() {
+	public String getPublishDate() {
 		return this.publishDate;
 	}
 }

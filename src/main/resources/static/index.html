@@ -20,17 +20,19 @@
   	
   	<div id='react' class="container"></div>
   	
-  	<div class="container">
+  	<script src="built/bundle.js"></script>
+  	
+  	<!-- <div class="container">
 	  <div class="card-group">
 	 	<div class="card border-success" style="width: 20rem;">
 		  <div class="card-body text-success">
-		    <h4 class="card-title">note title</h4>
-		  	<p class="card-text">note content</p>
+		    <h4 class="card-title">{{note.title}}</h4>
+		  	<p class="card-text">{{note.publishDate}} {{note.content}}</p>
 		  	<a href="#" class="btn btn-primary btn-sm">View Note</a>
 		  </div>
 		</div>
 	  </div>
-	</div>
+	</div> -->
   
   	<!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -42,8 +44,8 @@
   	<script src="https://fb.me/react-15.0.1.js"></script>
     <script src="https://fb.me/react-dom-15.0.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
-    <script type="text/babel">
-	var Note = React.createClass({
+    <!-- <script type="text/babel"> -->
+	<!-- var Note = React.createClass({
 		render: function() {
 			return (<div>note</div>);
 		}
@@ -57,7 +59,7 @@
 	ReactDOM.render(
 		<NoteBook />, document.getElementById('react')
 	);
-	</script>
+	</script> -->
   </body>
   
 </html>
